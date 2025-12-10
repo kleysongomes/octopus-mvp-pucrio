@@ -50,7 +50,7 @@ const Sidebar = () => {
               Nova Integração
             </NavLink>
             <NavLink to="/disp" className={({ isActive }) => isActive ? "active" : ""} onClick={() => setIsOpen(false)}>
-               Disponibilidade (Teste 404)
+               Disponibilidade
             </NavLink>
             <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""} onClick={() => setIsOpen(false)}>
               Sobre
