@@ -47,14 +47,23 @@ O projeto segue uma arquitetura organizada para facilitar a escalabilidade e man
 
 octopus-mvp/
 ├── public/              # Arquivos estaticos
+
 ├── src/
+
 │   ├── assets/          # Estilos Globais e Imagens
+
 │   ├── components/      # Componentes Reutilizaveis (Sidebar, Cards, Modal, Toast, etc.)
+
 │   ├── context/         # Gerenciamento de Estado Global (IntegrationContext)
+
 │   ├── data/            # Mock de dados (db.json) simulando API
+
 │   ├── pages/           # Paginas da aplicacao (Dashboard, Logs, Queues, Register, etc.)
+
 │   ├── App.jsx          # Componente Raiz e Configuracao de Layout
+
 │   └── main.jsx         # Ponto de entrada
+
 └── README.md            # Documentacao do projeto
 
 ---
