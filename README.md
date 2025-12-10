@@ -116,4 +116,5 @@ Para verificar os requisitos do MVP, siga este fluxo sugerido:
 ## Autor
 
 Desenvolvido por Kleyson Gomes
+
 Projeto entregue para o MVP de Front-end Avancado.
