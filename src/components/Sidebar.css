@@ -1,0 +1,211 @@
+.sidebar {
+  width: 260px;
+  background-color: #1a1a1a;
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-logo {
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-logo img {
+  max-width: 85%; 
+  height: auto; 
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.sidebar-nav {
+  padding: 20px 0;
+  flex: 1;
+}
+
+.nav-group { margin-bottom: 25px; }
+
+.nav-group h3 {
+  font-size: 0.75rem;
+  color: #888;
+  padding: 0 25px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 12px 25px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  border-left: 4px solid transparent;
+}
+
+.sidebar-nav a:hover {
+  background-color: #333;
+  color: white;
+}
+
+.sidebar-nav a.active {
+  background-color: #2d2d2d;
+  color: var(--primary-color);
+  border-left-color: var(--primary-color);
+  font-weight: 600;
+}
+
+.sidebar-footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #555;
+  border-top: 1px solid #333;
+}
+
+.mobile-menu-btn { display: none; }
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+    position: fixed;
+    top: 10px; right: 10px;
+    z-index: 1100;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    width: 280px;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .overlay-mobile {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 900;
+  }
+}
+
+.sidebar {
+  width: 260px;
+  background-color: #1a1a1a;
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-logo {
+  padding: 20px;
+  background: #fff;
+  display: flex; justify-content: center; align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar-logo img {
+  max-width: 85%; height: auto; max-height: 60px; object-fit: contain;
+}
+
+.sidebar-nav { padding: 20px 0; flex: 1; }
+.nav-group { margin-bottom: 25px; }
+.nav-group h3 { font-size: 0.75rem; color: #888; padding: 0 25px; margin-bottom: 10px; letter-spacing: 1px; }
+
+.sidebar-nav a {
+  display: block; padding: 12px 25px;
+  color: #ccc; text-decoration: none; font-size: 0.95rem;
+  transition: all 0.2s; border-left: 4px solid transparent;
+}
+.sidebar-nav a:hover { background-color: #333; color: white; }
+.sidebar-nav a.active {
+  background-color: #2d2d2d; color: var(--primary-color);
+  border-left-color: var(--primary-color); font-weight: 600;
+}
+
+.sidebar-footer {
+  padding: 20px; text-align: center; font-size: 0.8rem; color: #555; border-top: 1px solid #333;
+}
+
+/* --- RESPONSIVIDADE MOBILE --- */
+.mobile-header {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    height: 60px;
+    padding: 0 20px;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra elegante */
+  }
+
+  .mobile-logo-area img {
+    height: 35px;
+    width: auto;
+  }
+
+  .hamburger-btn {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    width: 280px;
+    z-index: 1200;
+    top: 0;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.3);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .overlay-mobile {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1150;
+    backdrop-filter: blur(2px);
+  }
+}

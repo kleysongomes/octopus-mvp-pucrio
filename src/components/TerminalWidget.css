@@ -1,0 +1,84 @@
+.terminal-widget {
+  background-color: #1e1e1e; /* Fundo escuro estilo VS Code */
+  color: #d4d4d4;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border: 1px solid #333;
+  font-family: 'Consolas', 'Courier New', monospace; /* Fonte de programador */
+  transition: all 0.3s ease;
+}
+
+.terminal-header {
+  background-color: #2d2d2d;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.terminal-header:hover {
+  background-color: #383838;
+}
+
+.terminal-title {
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.terminal-icon {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.toggle-text {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.terminal-body {
+  padding: 15px;
+  font-size: 0.9rem;
+  animation: slideDown 0.3s ease-out;
+}
+
+.terminal-line {
+  margin-bottom: 8px;
+  border-bottom: 1px dashed #333;
+  padding-bottom: 4px;
+}
+
+.t-date { color: #569cd6; margin-right: 8px; }
+.t-system { color: #4ec9b0; margin-right: 8px; font-weight: bold; }
+.t-msg { color: #ce9178; }
+
+.t-status { margin-right: 8px; font-weight: bold; }
+.t-status.success { color: #6a9955; }
+.t-status.error { color: #f44747; }
+.t-status.pending { color: #dcdcaa; }
+
+.terminal-footer {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+}
+
+.terminal-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.terminal-link:hover { text-decoration: underline; }
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

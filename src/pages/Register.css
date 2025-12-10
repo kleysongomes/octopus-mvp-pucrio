@@ -1,0 +1,57 @@
+.register-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.register-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border-top: 5px solid var(--primary-color);
+}
+
+.section-title {
+  margin-top: 25px; margin-bottom: 15px;
+  font-size: 1.1rem; color: var(--secondary-color);
+  border-bottom: 1px solid #eee; padding-bottom: 5px;
+}
+
+.register-form { margin-top: 20px; }
+
+.form-row { display: flex; gap: 20px; }
+.form-group { margin-bottom: 20px; width: 100%; }
+.form-group.half { width: 50%; }
+
+.form-group label {
+  display: block; margin-bottom: 8px;
+  font-weight: 600; color: #333; font-size: 0.9rem;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; padding: 12px;
+  border: 1px solid #ddd; border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:focus { border-color: var(--primary-color); outline: none; }
+
+.code-editor {
+  font-family: monospace; background-color: #f8f9fa; font-size: 0.9rem;
+}
+
+.form-footer {
+  display: flex; justify-content: flex-end; margin-top: 30px;
+}
+
+.systems-list-preview { margin-top: 30px; text-align: center; color: #666; font-size: 0.9rem; }
+
+/* --- RESPONSIVIDADE MOBILE --- */
+@media (max-width: 600px) {
+  .register-card { padding: 20px; }
+  
+  .form-row { flex-direction: column; gap: 0; }
+  .form-group.half { width: 100%; }
+  
+  .form-footer button { width: 100%; }
+}
